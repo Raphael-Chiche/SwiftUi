@@ -29,16 +29,6 @@
 		513FDDD42EB89CC80044DC48 /* SwiftAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		5178AD552EB9014600FF4CBC /* Exceptions for "SwiftApp" folder in "SwiftApp" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Features/Profil/ProfilViewModel.swift,
-			);
-			target = 513FDDBB2EB89CC70044DC48 /* SwiftApp */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
 		5178AD562EB9014600FF4CBC /* Exceptions for "SwiftApp" folder in "Copy Bundle Resources" phase from "SwiftApp" target */ = {
 			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
@@ -53,7 +43,6 @@
 		513FDDBE2EB89CC70044DC48 /* SwiftApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				5178AD552EB9014600FF4CBC /* Exceptions for "SwiftApp" folder in "SwiftApp" target */,
 				5178AD562EB9014600FF4CBC /* Exceptions for "SwiftApp" folder in "Copy Bundle Resources" phase from "SwiftApp" target */,
 			);
 			path = SwiftApp;

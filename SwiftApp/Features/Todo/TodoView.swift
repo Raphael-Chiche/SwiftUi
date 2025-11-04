@@ -6,9 +6,10 @@
 //
 import SwiftUI
 
-struct todoView: View {
+struct TodoView: View {
     @State var todoModel = TodoViewModel()
     @State var newNextTask: String = ""
+    
     
     var body: some View {
         VStack{
@@ -18,21 +19,20 @@ struct todoView: View {
             }
             
             Button("Add 1"){
-                todoModel.count += 1
+                Task {await todoModel.increment()}
             }
             Button("delete 1"){
-                todoModel.count -= 1
+                Task{await todoModel.decrement()}	
             }
         }
         .padding()
         .task {
             await todoModel.fetchTodo()
         }
-        .onChange(of: todoModel.count) { _, _ in
-            Task {
-                await todoModel.fetchTodo()
-            }
-        }
         
     }
+}
+
+#Preview {
+    TodoView()
 }

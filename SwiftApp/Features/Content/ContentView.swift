@@ -14,10 +14,10 @@ struct ContentView: View {
                 CounterView()
             }
             NavigationLink("Aller à Todo") {
-                todoView()
+                TodoView()
             }
             NavigationLink("Aller sur le profil") {
-                ProfilView()
+                ProfileView()
             }
             .navigationTitle("Accueil")
             .tint(.blue)

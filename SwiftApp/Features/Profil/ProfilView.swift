@@ -8,7 +8,7 @@
 import SwiftUI
 
 
-struct ProfilView: View {
+struct ProfileView: View {
     @State var profilModel = ProfilViewModel()
     @State var newFirstName = "";
     @State var newLastName = "";

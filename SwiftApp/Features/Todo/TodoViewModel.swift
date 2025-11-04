@@ -6,6 +6,7 @@
 //
 import SwiftUI
 
+@Observable
 class TodoViewModel {
     var todo: Todo?
 //    var NextTask : String = "1"
@@ -27,5 +28,16 @@ class TodoViewModel {
             todo = decoded
         } catch {
         }
+    }
+    
+    
+    func increment() async{
+        count += 1
+        await fetchTodo()
+    }
+    
+    func decrement() async{
+        count -= 1
+        await fetchTodo()
     }
 }
